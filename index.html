@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cozy Mug Café</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+      <div class="container">
+        <h1 class="navbar-brand m-0 section-title fs-2">
+          The Cozy Mug <span class="text-colored-title">Café</span>
+        </h1>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-navegacao"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <nav
+          class="navbar-collapse collapse justify-content-end"
+          id="menu-navegacao"
+        >
+          <ul class="nav nav-pills d-block d-md-flex">
+            <li class="nav-item fw-bold">
+              <a href="#sobre-o-restaurante" class="nav-link">
+                <i class="bi bi-house-door me-1"></i>
+                About the café
+              </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#eventos" class="nav-link">
+                <i class="bi bi-calendar-check me-1"></i>
+                Events
+              </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#cardapio" class="nav-link">
+                <i class="bi bi-card-text me-1"></i>
+                Our menu
+              </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#fale-conosco" class="nav-link">
+                <i class="bi bi-chat-left-text me-1"></i>
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="cabecalho"
+      data-bs-smooth-scroll="true"
+    >
+      <section id="sobre-o-restaurante">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="./images/slides/slide1.jpg"
+                alt="Internal space of the cafeteria"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./images/slides/slide2.jpg"
+                alt="coffee cups and filters"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./images/slides/slide3.jpg"
+                alt="Italian coffee filter"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+        </div>
+
+        <div class="pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <img
+                  src="./images/coffee.jpg"
+                  class="d-block w-100 rounded"
+                  alt="coffee beans and cup"
+                />
+              </div>
+              <div class="col-md-7 mt-3 mt-md-0">
+                <h2 class="section-title">
+                  About <span class="text-colored">the café</span>
+                </h2>
+                <p>
+                  Welcome to The Cozy Mug, a cozy haven for coffee enthusiasts
+                  and community gatherings. Nestled in the heart of the city,
+                  The Cozy Mug offers an inviting ambiance where each detail —
+                  from soft lighting to comfortable seating — has been curated
+                  to make guests feel right at home. Our carefully selected
+                  coffee beans are sourced from the finest growers worldwide,
+                  roasted to perfection, and brewed with precision by our
+                  skilled baristas.
+                </p>
+                <h3 class="section-title">
+                  About <span class="text-colored">our space</span>
+                </h3>
+                <p>
+                  The Cozy Mug is a flexible space that hosts events from
+                  birthday celebrations to corporate meetings, with customizable
+                  packages and AV-equipped private rooms. It also offers barista
+                  courses, covering topics like bean selection, brewing
+                  techniques, and latte art, led by experienced baristas for
+                  coffee enthusiasts to learn and enjoy.
+                </p>
+                <ul>
+                  <li>Intimate birthday celebrations</li>
+                  <li>Barista courses</li>
+                  <li>Corporate meetings</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="eventos" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">
+              For all <span class="text-colored">occasions</span>
+            </h2>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <img
+                src="./images/eventos/aniversario.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-calendar-heart-fill"></i>
+                Intimate birthday celebrations
+              </h3>
+              <p>
+                Our café offers a charming space perfect for celebrating
+                birthdays, providing a cozy atmosphere and customizable options
+                to make your special day unforgettable.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="./images/eventos/cursobarista.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-cup-hot-fill"></i>
+                Barista courses
+              </h3>
+              <p>
+                Our café offers hands-on barista courses, where you can learn
+                everything from brewing techniques to latte art, guided by our
+                skilled baristas.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="./images/eventos//reunioes.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-people-fill"></i>
+                Corporate meetings
+              </h3>
+              <p>
+                Our café features a versatile space ideal for corporate
+                meetings, equipped with all the amenities needed for a
+                productive and comfortable gathering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cardapio" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center mb-5">
+              Our <span class="text-colored">menu</span>
+            </h2>
+          </div>
+          <div class="row">
+            <aside class="col-md-2">
+              <nav class="nav nav-pills flex-column nav-cardapio">
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#bebidas-sem-alcool"
+                  class="fw-bold text-start nav-link text-colored active"
+                >
+                  Coffees
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#bebidas-alcoolicas"
+                  class="fw-bold text-start nav-link text-colored"
+                >
+                  Drinks and cocktails
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#entradas"
+                  class="fw-bold text-start nav-link text-colored"
+                >
+                  Breakfast
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#pratos-principais"
+                  class="fw-bold text-start nav-link text-colored"
+                >
+                  All day
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#sobremesas"
+                  class="fw-bold text-start nav-link text-colored"
+                >
+                  Dessert
+                </button>
+              </nav>
+            </aside>
+            <div class="col-md-10">
+              <div class="tab-content">
+                <div class="tab-pane active" id="bebidas-sem-alcool">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Americano.jpg"
+                        alt="Americano"
+                      />
+                      <h5 class="text-colored">Americano</h5>
+                      <p>
+                        A shot of espresso diluted with hot water, offering a
+                        milder flavor.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Cappuccino.jpg"
+                        alt="Cappuccino"
+                      />
+                      <h5 class="text-colored">Cappuccino</h5>
+                      <p>
+                        Similar to a latte but with equal parts espresso,
+                        steamed milk, and foam, creating a frothy texture.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Cold Brew.jpg"
+                        alt="Cold Brew"
+                      />
+                      <h5 class="text-colored">Cold Brew</h5>
+                      <p>
+                        Coffee brewed with cold water over an extended period
+                        (12-24 hours) for a smooth, less acidic flavor, served
+                        over ice.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Espresso.jpg"
+                        alt="Espresso"
+                      />
+                      <h5 class="text-colored">Espresso</h5>
+                      <p>
+                        A strong, concentrated coffee brewed by forcing hot
+                        water through finely-ground coffee beans.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Flat White.jpg"
+                        alt="Flat White"
+                      />
+                      <h5 class="text-colored">Flat White</h5>
+                      <p>
+                        A smooth, velvety coffee made with espresso and
+                        microfoam, less frothy than a cappuccino.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Latte.jpg"
+                        alt="Latte"
+                      />
+                      <h5 class="text-colored">Latte</h5>
+                      <p>
+                        A shot of espresso mixed with steamed milk and topped
+                        with a small amount of foam.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Macchiato.jpg"
+                        alt="Macchiato"
+                      />
+                      <h5 class="text-colored">Macchiato</h5>
+                      <p>
+                        An espresso "stained" with a small amount of steamed
+                        milk, offering a strong coffee flavor with a touch of
+                        creaminess.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Mocha.jpg"
+                        alt="Mocha"
+                      />
+                      <h5 class="text-colored">Mocha</h5>
+                      <p>
+                        A combination of espresso, steamed milk, and chocolate
+                        syrup, often topped with whipped cream.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="bebidas-alcoolicas">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Cold Brew Tonic.jpg"
+                        alt="Cold Brew Tonic"
+                      />
+                      <h5 class="text-colored">Cold Brew Tonic</h5>
+                      <p>
+                        A refreshing mix of cold brew coffee and tonic water,
+                        garnished with a slice of citrus. The effervescence of
+                        the tonic pairs perfectly with the smooth, bold flavor
+                        of cold brew.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Coffee Mojito.jpg"
+                        alt="Coffee Mojito"
+                      />
+                      <h5 class="text-colored">Mojito</h5>
+                      <p>
+                        A twist on the classic mojito, combining fresh mint,
+                        lime, rum for a unique and energizing cocktail.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Iced Coffee Lemonade.jpg"
+                        alt="Iced Lemonade"
+                      />
+                      <h5 class="text-colored">Iced Lemonade</h5>
+                      <p>A refreshing blend of iced lemonade.</p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/bebidas/Coffee Paloma.jpg"
+                        alt="Coffee Paloma"
+                      />
+                      <h5 class="text-colored">Coffee Paloma</h5>
+                      <p>
+                        A refreshing cocktail made with grapefruit soda,
+                        tequila, and a splash of espresso, offering a zesty,
+                        slightly bitter flavor profile with a coffee kick.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="entradas">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/entradas/Avocado Toast.jpg"
+                        alt="Avocado Toast"
+                      />
+                      <h5 class="text-colored">Avocado Toast</h5>
+                      <p>
+                        Fresh, mashed avocado spread on toasted sourdough bread,
+                        topped with a poached egg, cherry tomatoes, and a
+                        sprinkle of chili flakes for extra flavor.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/entradas/Classic Pancakes.jpg"
+                        alt="Classic Pancakes"
+                      />
+                      <h5 class="text-colored">Classic Pancakes</h5>
+                      <p>
+                        Fluffy pancakes served with maple syrup, butter, and a
+                        choice of toppings like fresh berries, bananas, or
+                        whipped cream.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/entradas/Breakfast Burrito.jpg"
+                        alt="Breakfast Burrito"
+                      />
+                      <h5 class="text-colored">Breakfast Burrito</h5>
+                      <p>
+                        A warm tortilla filled with scrambled eggs, crispy bacon
+                        or sausage, cheese, and avocado, wrapped up for a
+                        hearty, satisfying breakfast.
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/entradas/Yogurt.jpg"
+                        alt="Greek Yogurt Parfait"
+                      />
+                      <h5 class="text-colored">Greek Yogurt Parfait</h5>
+                      <p>
+                        A layer of creamy Greek yogurt topped with granola,
+                        fresh fruits like berries or kiwi, and a drizzle of
+                        honey for a light and refreshing option.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="pratos-principais">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/pratos/Grilled Chicken Caesar Salad.jpg"
+                        alt="Grilled Chicken Caesar Salad"
+                      />
+                      <h5 class="text-colored">Grilled Chicken Caesar Salad</h5>
+                      <p>
+                        Tender grilled chicken served on a bed of romaine
+                        lettuce, topped with homemade Caesar dressing, croutons,
+                        and shaved Parmesan cheese.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/pratos/Veggie Wrap.jpg"
+                        alt="Veggie Wrap"
+                      />
+                      <h5 class="text-colored">Veggie Wrap</h5>
+                      <p>
+                        A whole wheat wrap filled with hummus, roasted
+                        vegetables, mixed greens, avocado, and a light
+                        vinaigrette dressing for a fresh, vegetarian option.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/pratos/Classic BLT Sandwich.jpg"
+                        alt="Classic BLT Sandwich"
+                      />
+                      <h5 class="text-colored">Classic BLT Sandwich</h5>
+                      <p>
+                        Crispy bacon, fresh lettuce, and juicy tomatoes, served
+                        on toasted whole grain or white bread, with a smear of
+                        mayonnaise.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/pratos/Turkey and Swiss Panini.jpg"
+                        alt="Turkey and Swiss Panini"
+                      />
+                      <h5 class="text-colored">Turkey and Swiss Panini</h5>
+                      <p>
+                        Sliced turkey, Swiss cheese, and caramelized onions
+                        pressed between slices of artisan bread, grilled to
+                        perfection for a warm, melty sandwich.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/pratos/Quinoa Bowl.jpg"
+                        alt="Quinoa Bowl"
+                      />
+                      <h5 class="text-colored">Quinoa Bowl</h5>
+                      <p>
+                        A nutritious bowl of quinoa topped with grilled
+                        vegetables, avocado, a poached egg, and a light
+                        lemon-tahini dressing.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/pratos/Minestrone Soup.jpg"
+                        alt="Minestrone Soup"
+                      />
+                      <h5 class="text-colored">Minestrone Soup</h5>
+                      <p>
+                        A hearty Italian soup filled with fresh vegetables,
+                        beans, pasta, and a savory tomato-based broth, perfect
+                        for a lighter but comforting lunch.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="sobremesas">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/sobremesas/Chocolate Lava Cake.jpg"
+                        alt="Chocolate Cake"
+                      />
+                      <h5 class="text-colored">Chocolate Cake</h5>
+                      <p>
+                        Our decadent chocolate cake is rich, moist, and layered
+                        with velvety smooth frosting, making it the perfect
+                        treat for any chocolate lover.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/sobremesas/Tiramisu.jpg"
+                        alt="Tiramisu"
+                      />
+                      <h5 class="text-colored">Tiramisu</h5>
+                      <p>
+                        A classic Italian dessert made with layers of
+                        coffee-soaked ladyfingers, mascarpone cheese, cocoa
+                        powder, and a dusting of cocoa for a rich, creamy
+                        finish.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/sobremesas/Lemon Meringue Pie.jpg"
+                        alt="Lemon Meringue Pie"
+                      />
+                      <h5 class="text-colored">Lemon Meringue Pie</h5>
+                      <p>
+                        A tangy lemon custard filling in a buttery, flaky pie
+                        crust, topped with a fluffy, toasted meringue for the
+                        perfect balance of tart and sweet.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 mt-2"
+                        src="images/cardapio/sobremesas/Berry Cheesecake.jpg"
+                        alt="Berry Cheesecake"
+                      />
+                      <h5 class="text-colored">Berry Cheesecake</h5>
+                      <p>
+                        A smooth and creamy cheesecake topped with a generous
+                        layer of fresh mixed berries and a hint of lemon zest
+                        for a refreshing twist.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="fale-conosco" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">
+              Contact <span class="text-colored">us</span>
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-7 mb-5">
+              <form>
+                <div class="mb-3">
+                  <label for="nome" class="form-label fw-bold text-colored"
+                    >Your name</label
+                  >
+                  <input type="text" id="nome" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-bold text-colored"
+                    >Your e-mail</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="telefone" class="form-label fw-bold text-colored"
+                    >Your phone (optional)</label
+                  >
+                  <input type="tel" id="telefone" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label fw-bold text-colored"
+                    >Your message</label
+                  >
+                  <textarea
+                    id="mensagem"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn fw-bold">Submit</button>
+              </form>
+            </div>
+            <div class="col-md-5">
+              <div class="row">
+                <h3 class="section-title fs-4 text-colored">
+                  <i class="bi bi-hand-thumbs-up-fill"></i>
+                  Social media
+                </h3>
+                <ul class="social-links">
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="bi bi-facebook text-colored"></i>
+                    </a>
+                  </li>
+                  <li class="fs-5 ms-1 me-1">
+                    <a href="#">
+                      <i class="bi bi-instagram text-colored"></i>
+                    </a>
+                  </li>
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="bi bi-whatsapp text-colored"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="row mt-4">
+                <h3 class="section-title fs-4 text-colored">
+                  <i class="bi bi-cursor-fill"></i>
+                  Address
+                </h3>
+                <p>
+                  123 Elmwood Street, Kensington, London, W8 5RP, United Kingdom
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
