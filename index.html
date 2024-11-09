@@ -728,5 +728,13 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/inputmask/dist/inputmask.min.js"></script>
+    <script>
+      window.onload = function () {
+        var phoneInput = document.getElementById('telefone')
+        var im = new Inputmask('(99) 99999-9999')
+        im.mask(phoneInput)
+      }
+    </script>
   </body>
 </html>
